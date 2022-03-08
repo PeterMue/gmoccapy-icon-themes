@@ -23,20 +23,29 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.4250454"
-     inkscape:cx="30.693535"
-     inkscape:cy="83.164072"
+     inkscape:zoom="1.2572064"
+     inkscape:cx="199.12337"
+     inkscape:cy="53.842968"
      inkscape:document-units="px"
      inkscape:current-layer="base"
      inkscape:document-rotation="0"
      showgrid="false"
      units="px"
-     showguides="false"
+     showguides="true"
      inkscape:window-width="1871"
      inkscape:window-height="1387"
      inkscape:window-x="3009"
      inkscape:window-y="25"
-     inkscape:window-maximized="0" />
+     inkscape:window-maximized="0"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="128,128"
+       orientation="-1,0"
+       id="guide843"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,0,255)" />
+  </sodipodi:namedview>
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -55,7 +64,19 @@
      id="base">
     <path
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:264.81px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 94.999997,32.999999 -8.741999,8.742 15.996002,16.058 H 39.199999 V 70.199998 H 102.254 l -15.996002,15.996 8.741999,8.803999 L 126,63.999998 Z M 14.4,20.6 H 63.999998 V 8.2 H 14.4 C 7.5799998,8.2 2,13.78 2,20.6 v 86.8 c 0,6.82 5.5799998,12.4 12.4,12.4 H 63.999998 V 107.4 H 14.4 Z"
-       id="path962" />
+       d="M 14.4,20.6 H 63.999998 V 8.2 H 14.4 C 7.5799998,8.2 2,13.78 2,20.6 v 86.8 c 0,6.82 5.5799998,12.4 12.4,12.4 H 63.999998 V 107.4 H 14.4 Z"
+       id="path962"
+       sodipodi:nodetypes="cccsssscccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:55.4098px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.38525"
+       x="127.51493"
+       y="83.696449"
+       id="text841"><tspan
+         sodipodi:role="line"
+         id="tspan839"
+         x="127.51493"
+         y="83.696449"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:condensed;font-family:Roboto;-inkscape-font-specification:'Roboto Medium Condensed';text-align:end;text-anchor:end;stroke-width:1.38525">EXIT</tspan></text>
   </g>
 </svg>
