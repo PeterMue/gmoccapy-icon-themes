@@ -42,7 +42,7 @@
      inkscape:cx="43.753358"
      inkscape:cy="112.94187"
      inkscape:document-units="px"
-     inkscape:current-layer="pause-active"
+     inkscape:current-layer="select-file"
      inkscape:document-rotation="0"
      showgrid="false"
      units="px"
@@ -50,7 +50,7 @@
      inkscape:window-width="2435"
      inkscape:window-height="1387"
      inkscape:window-x="2073"
-     inkscape:window-y="42"
+     inkscape:window-y="25"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata5">
@@ -64,6 +64,15 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="select-file"
+     inkscape:label="select-file">
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:6.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 76.399996,2 H 26.799995 c -6.82,0 -12.338,5.5800001 -12.338,12.4 l -0.062,99.2 c 0,6.82 5.518,12.4 12.338,12.4 H 101.2 c 6.82,0 12.4,-5.58 12.4,-12.4 V 39.200001 Z m -18.972,99.20001 -21.948001,-21.948009 8.742,-8.742 13.144001,13.144001 26.288,-26.288001 8.742,8.742 z m 12.772,-55.800009 v -34.1 l 34.100004,34.1 z"
+       id="path874" />
+  </g>
   <g
      inkscape:label="open-file"
      inkscape:groupmode="layer"
@@ -120,7 +129,7 @@
      id="pause-active"
      style="display:inline">
     <path
-       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2345.46000000000003638px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2345.46px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 10.857145,126 H 46.285716 V 2 H 10.857145 Z M 81.714288,2 V 126 H 117.14285 V 2 Z"
        id="path1920" />
   </g>

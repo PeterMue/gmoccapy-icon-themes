@@ -166,6 +166,12 @@ def compose_images():
                      layers=["simple_plane", axis]
                      )
 
+    composer.add(f"tool_axis_y_inv.symbolic.png",
+                 src_file=gremlin_control_icons_svg,
+                 context="actions",
+                 layers=["simple_plane_inv", "y_inv"]
+                 )
+
     # coolant controls
     coolant_icons_svg = svg("coolant_icons.inkscape.svg")
     for status in ["active", "inactive"]:
@@ -223,7 +229,7 @@ def compose_images():
     # auto menu icons
     auto_icons_svg = svg("auto_icons.inkscape.svg")
     for name in ["open_file", "refresh", "play", "stop", "pause", "pause_active", "step", "run_from_line",
-                 "skip_optional_active", "skip_optional_inactive", "edit_code"]:
+                 "skip_optional_active", "skip_optional_inactive", "edit_code", "select_file"]:
         composer.add(f"{name}.symbolic.png",
                      src_file=auto_icons_svg,
                      context="actions",
