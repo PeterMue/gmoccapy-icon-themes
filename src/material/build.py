@@ -8,7 +8,7 @@ from _build_helper import Composer, Dimension
 THEME_NAME = "material"
 BASE_PATH = Path(__file__).parent.absolute()
 TARGET_BASE = BASE_PATH.joinpath("../../target").resolve()
-TEMP_DIR = TARGET_BASE.joinpath("temp")
+TEMP_DIR = TARGET_BASE.joinpath("temp", THEME_NAME)
 TARGET_DIR = TARGET_BASE.joinpath(THEME_NAME)
 
 DIMENSIONS = list(Dimension(s) for s in [16, 24, 32, 48])
