@@ -48,7 +48,7 @@
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
-     bordercolor="#212121"
+     bordercolor="#666666"
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
@@ -224,7 +224,7 @@
      style="display:inline">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:41.0938px;line-height:1.25;font-family:sans-serif;fill:#D50000;fill-opacity:1;stroke:none;stroke-width:1.02735"
+       style="font-style:normal;font-weight:normal;font-size:41.0938px;line-height:1.25;font-family:sans-serif;fill:#DD2C00;fill-opacity:1;stroke:none;stroke-width:1.02735"
        x="12.652817"
        y="125.5987"
        id="text3822"><tspan
@@ -232,7 +232,7 @@
          id="tspan3820"
          x="12.652817"
          y="125.5987"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#D50000;stroke-width:1.02735">STOP</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#DD2C00;stroke-width:1.02735">STOP</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"

@@ -34,7 +34,7 @@
   <sodipodi:namedview
      id="namedview6176"
      pagecolor="#ffffff"
-     bordercolor="#212121"
+     bordercolor="#666666"
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
@@ -159,7 +159,7 @@
        style="font-style:normal;font-weight:normal;font-size:80px;line-height:1.25;font-family:sans-serif;fill:#212121;fill-opacity:1;stroke:none" />
     <path
        id="path868"
-       style="display:inline;fill:#D50000;fill-opacity:1;stroke:none;stroke-width:6.70515px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="display:inline;fill:#DD2C00;fill-opacity:1;stroke:none;stroke-width:6.70515px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 10.748047,5.2626758 1.9999997,13.420879 25.146483,35.350566 c -7.94e-4,0.0033 -0.0012,0.0065 -0.002,0.0098 l 61.357422,58.16211 0.02539,-0.0234 L 117.32031,122.73732 126,114.3838 95.20703,85.276347 77.414061,68.381816 32.86914,26.206035 l -0.0078,0.0078 z" />
   </g>
   <g
