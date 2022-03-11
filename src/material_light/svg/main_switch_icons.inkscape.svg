@@ -81,7 +81,7 @@
       <path
          transform="scale(0.6) rotate(180) translate(0,0)"
          d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
-         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#00C853;stroke-opacity:1;fill:#00C853;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#00c853;stroke-opacity:1;fill:#00c853;fill-opacity:1"
          id="path3906" />
     </marker>
     <marker
@@ -94,7 +94,7 @@
        inkscape:isstock="true">
       <path
          transform="scale(0.2) rotate(180) translate(6,0)"
-         style="fill-rule:evenodd;stroke:#00C853;stroke-width:1pt;stroke-opacity:1;fill:#00C853;fill-opacity:1"
+         style="fill-rule:evenodd;stroke:#00c853;stroke-width:1pt;stroke-opacity:1;fill:#00c853;fill-opacity:1"
          d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
          id="path3806" />
     </marker>
@@ -175,7 +175,7 @@
       <path
          transform="scale(0.6) rotate(180) translate(0,0)"
          d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
-         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#00C853;stroke-opacity:1;fill:#00C853;fill-opacity:1"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#00c853;stroke-opacity:1;fill:#00c853;fill-opacity:1"
          id="path2525" />
     </marker>
     <marker

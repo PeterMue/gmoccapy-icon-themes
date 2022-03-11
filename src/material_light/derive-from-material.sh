@@ -4,9 +4,9 @@ THEME_NAME="material-light"
 THEME_COMMENT="Material icon theme for gmoccapy (optimized for light themes)"
 
 BASE_COLOR="#212121"
-SUCCESS_COLOR="#00C853"
-WARN_COLOR="#FFD600"
-ERROR_COLOR="#DD2C00"
+SUCCESS_COLOR="#00c853"
+WARN_COLOR="#ffd600"
+ERROR_COLOR="#dd2c00"
 
 pushd "$(dirname "$(realpath "$0")")"
 

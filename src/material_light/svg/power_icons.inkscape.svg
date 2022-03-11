@@ -65,7 +65,7 @@
      id="off"
      style="display:inline">
     <path
-       style="fill:#DD2C00;fill-opacity:1;stroke:none;stroke-width:6.88889px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#dd2c00;fill-opacity:1;stroke:none;stroke-width:6.88889px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 70.888891,2 H 57.111114 v 68.888886 h 13.777777 z"
        id="path917" />
   </g>
@@ -75,7 +75,7 @@
      inkscape:label="on"
      style="display:inline">
     <path
-       style="fill:#00C853;fill-opacity:1;stroke:none;stroke-width:6.88889px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#00c853;fill-opacity:1;stroke:none;stroke-width:6.88889px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 70.888891,2 H 57.111114 v 68.888886 h 13.777777 z"
        id="path917-2" />
   </g>
