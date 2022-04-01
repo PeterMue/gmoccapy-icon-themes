@@ -4,5 +4,4 @@ pushd "$(dirname "$(realpath "$0")")/src"
 # python3 -m ${THEME_DIR}.build $@
 python3 -m material.build $@
 python3 -m material_light.build $@
-./classic/build.sh $@
 popd
