@@ -16,7 +16,7 @@ function do_clean() {
 function do_compose() {
   mkdir -p "$TARGET_DIR"
 
-  SIZES=( 16 24 32 48 )
+  SIZES=( 24 32 48 )
 
   # create size-x-size folders
   for size in "${SIZES[@]}"; do
