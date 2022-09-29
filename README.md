@@ -88,3 +88,24 @@ There are only four colors allowed to use:
 | blue  | `#0000ff` | Error: this color indicates "error" (usually somethin red'ish)                |
 
 **TIP** Examples of symbolic icons can be found at linuxcnc/share/gmoccapy/icons/material Theme
+
+
+# Building
+
+To build the icons in this repository use the `build.sh` script in the root directory.
+
+## Requirements
+
+* python3
+* inkscape
+
+## Prepare python virtual environment
+
+```sh
+pyhton3 -m venv env
+source env/bin/activate
+python3 -m pip install -r requirements.txt
+```
+
+For details on using python virtual environment see [Installing packages using pip and virtual environments](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)
+
