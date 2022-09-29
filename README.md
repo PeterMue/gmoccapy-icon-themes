@@ -96,7 +96,7 @@ To build the icons in this repository use the `build.sh` script in the root dire
 
 ## Requirements
 
-* python3
+* python3 >= 3.8
 * inkscape
 
 ## Prepare python virtual environment
