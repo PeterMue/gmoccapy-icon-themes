@@ -263,6 +263,24 @@ def compose_images():
                      layers=[name.replace("_", "-")]
                      )
 
+    # notification
+    notification_icons_svg = svg("notification_icons.inkscape.svg")
+    composer.add("window_close.symbolic.png",
+                src_file=notification_icons_svg,
+                context="actions",
+                layers=["close"]
+                )
+    composer.add("dialog_information.symbolic.png",
+                src_file=notification_icons_svg,
+                context="status",
+                layers=["info"]
+                )
+    composer.add("dialog_warning.symbolic.png",
+                src_file=notification_icons_svg,
+                context="status",
+                layers=["warn"]
+                )
+
     # compose all images
     composer.compose(DIMENSIONS)
 
