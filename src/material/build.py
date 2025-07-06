@@ -288,6 +288,14 @@ def compose_images():
                 layers=["warn"]
                 )
 
+    # calculator
+    calculator_svg = svg("calculator.inkscape.svg")
+    composer.add("calculator_open.symbolic.png",
+                src_file=calculator_svg,
+                context="actions",
+                layers=["base"]
+                )
+
     # compose all images
     composer.compose(DIMENSIONS)
 
