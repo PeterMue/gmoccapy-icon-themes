@@ -1,10 +1,9 @@
-name: Build Icon Themes
+name: Release Icon Themes
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    tags:
+      - 'v*' 
 
 jobs:
   build:
@@ -28,15 +27,15 @@ jobs:
       - name: 🎨 Run build script
         run: ./build.sh
 
-      - name: 🗂 Upload material theme
-        uses: actions/upload-artifact@v4
-        with:
-          name: material
-          path: |
-            target/material/
+      - name: 📁 Package icons
+        run: |
+          cd target
+          zip -r material.zip material
+          zip -r material-light.zip material-light
 
-      - name: 🗂 Upload material-light theme
-        uses: actions/upload-artifact@v4
+      - name: 🚀 Create GitHub Release
+        uses: softprops/action-gh-release@v1
         with:
-          name: material-light
-          path: target/material-light/
+          files: gmoccapy-icons.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
