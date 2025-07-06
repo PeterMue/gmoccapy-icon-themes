@@ -1,0 +1,41 @@
+name: Release Icon Themes
+
+on:
+  push:
+    tags:
+      - 'v*' 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🛠 Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y inkscape python3 python3-pip
+
+      - name: 📦 Install Python packages
+        run: pip3 install -r requirements.txt
+
+      - name: 🧪 Make build.sh executable
+        run: chmod +x build.sh
+
+      - name: 🎨 Run build script
+        run: ./build.sh
+
+      - name: 📁 Package icons
+        run: |
+          cd target
+          zip -r material.zip material
+          zip -r material-light.zip material-light
+
+      - name: 🚀 Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: gmoccapy-icons.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
