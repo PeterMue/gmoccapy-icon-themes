@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="128"
    height="128"
    viewBox="0 0 128 128"
    version="1.1"
    id="svg8"
-   inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
-   sodipodi:docname="chevron_icons.inkscape.svg">
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   sodipodi:docname="chevron_icons.inkscape.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -23,20 +23,23 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.4250454"
-     inkscape:cx="22.306508"
-     inkscape:cy="59.569799"
+     inkscape:zoom="7.6761453"
+     inkscape:cx="66.113912"
+     inkscape:cy="57.125026"
      inkscape:document-units="px"
-     inkscape:current-layer="left"
+     inkscape:current-layer="down"
      inkscape:document-rotation="0"
      showgrid="false"
      units="px"
      showguides="false"
-     inkscape:window-width="1871"
-     inkscape:window-height="1387"
-     inkscape:window-x="2645"
-     inkscape:window-y="25"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1872"
+     inkscape:window-height="1302"
+     inkscape:window-x="2393"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -66,7 +69,7 @@
      style="display:inline">
     <path
        id="path41"
-       style="fill:#212121;fill-opacity:1;stroke:none;stroke-width:441.348px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="display:inline;fill:#212121;fill-opacity:1;stroke:none;stroke-width:441.348px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 40.285,2 25.715,16.57 73.041667,64 25.715,111.43 40.285,126 l 62,-62 z" />
   </g>
   <g
@@ -76,7 +79,17 @@
      style="display:inline">
     <path
        id="path21"
-       style="fill:#212121;fill-opacity:1;stroke:none;stroke-width:441.348px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="display:inline;fill:#212121;fill-opacity:1;stroke:none;stroke-width:441.348px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 16.57,102.285 64,54.958333 111.43,102.285 126,87.715 l -62,-62 -62,62 z" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="down"
+     inkscape:label="down"
+     style="display:inline">
+    <path
+       id="path1"
+       style="fill:#212121;fill-opacity:1;stroke:none;stroke-width:441.348px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 16.57,25.715 64,73.041667 111.43,25.715 126,40.285 l -62,62 -62,-62 z" />
   </g>
 </svg>

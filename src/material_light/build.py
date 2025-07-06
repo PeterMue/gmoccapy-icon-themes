@@ -217,9 +217,16 @@ def compose_images():
                      layers=[speed]
                      )
 
+    # single file for continuous jog speed
+    composer.add(f"jog_continuous.png",
+                src_file=jog_speed_svg,
+                context="actions",
+                layers=["jog-continuous"]
+                )
+
     # chevron
     chevron_icons_svg = svg("chevron_icons.inkscape.svg")
-    for direction in ["left", "right", "up"]:
+    for direction in ["left", "right", "up", "down"]:
         composer.add(f"chevron_{direction}.png",
                      src_file=chevron_icons_svg,
                      context="actions",
@@ -247,7 +254,7 @@ def compose_images():
 
     # edit icons
     edit_icons_svg = svg("edit_icons.inkscape.svg")
-    for name in ["save", "save_as", "new_document", "keyboard", "keyboard_hide"]:
+    for name in ["save", "save_as", "new_document", "keyboard", "keyboard_hide", "edit_undo", "edit_redo", "split_view", "comment"]:
         composer.add(f"{name}.png",
                      src_file=edit_icons_svg,
                      context="actions",
