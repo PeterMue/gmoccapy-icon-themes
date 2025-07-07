@@ -1,0 +1,31 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+table {
+    width: 100%;
+};
+
+.inner {
+  position: relative;
+  max-width: 800px !important;
+  padding: 20px 10px;
+  margin: 0 auto;
+};
+
+small {
+  font-size: smaller;
+};
+
+dl p a {
+  font-style: normal;
+};
+
+td img {
+  padding: 0;
+  margin: 0;
+};
+td:has(img) {
+  text-align: center;
+};
