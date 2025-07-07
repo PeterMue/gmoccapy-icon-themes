@@ -1,0 +1,58 @@
+---
+layout: default
+---
+<h1>Themes</h1>
+
+<dl>
+{% for theme in site.data.icon-matrix.themes %}
+  <dt>{{ theme.name }}</dt>
+  <dd>
+    <p>{{ theme.description }}</p>
+    {% assign download_name = theme.name | append: ".zip" %}
+    {% assign asset = site.github.latest_release.assets | where: "name", download_name | first %}
+    <p><a href="{{ asset.browser_download_url }}">Download {{ asset.name }} ({{ site.github.latest_release.name }})</a></p>
+  </dd>
+{% endfor %}
+</dl>
+
+<p style="margin-top: 2em;">
+  <small>Older versions can be found in the <a href="{{ site.github.releases_url }}">Release History</a>.</small>
+</p>
+
+<h1>Icons</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Name</th>
+      <th>Size</th>
+      {% for theme in site.data.icon-matrix.themes %}
+        <th>{{ theme.name }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for icon in site.data.icon-matrix.icons %}
+      {% assign size_count = icon.sizes | size %}
+      {% for size in icon.sizes %}
+        <tr>
+          {% if forloop.first %}
+            <td rowspan="{{ size_count }}">{{ icon.category }}</td>
+            <td rowspan="{{ size_count }}">{{ icon.name }}</td>
+          {% endif %}
+          <td>{{ size.size }}</td>
+          {% for theme in site.data.icon-matrix.themes %}
+            {% assign path = size.themes[theme.name] %}
+            <td>
+              {% if path == "missing" %}
+                <em>missing</em>
+              {% else %}
+                <img src="{{ path | relative_url }}" alt="{{ icon.name }}" width="{{ size.size | split: 'x' | first }}">
+              {% endif %}
+            </td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+    {% endfor %}
+  </tbody>
+</table>

@@ -21,20 +21,40 @@ jobs:
       - name: 📦 Install Python packages
         run: pip3 install -r requirements.txt
 
-      - name: 🧪 Make build.sh executable
-        run: chmod +x build.sh
-
       - name: 🎨 Run build script
-        run: ./build.sh
+        run: |
+          chmod +x build.sh
+          ./build.sh
+     
+      - name: 🎨 Build docs
+        run: |
+          mkdir -p docs/assets/themes
+          cp target/material docs/assets/themes/material
+          cp target/material-light docs/assets/themes/material-light
+          cd docs
+          chmod +x build.sh
+          ./build.sh
+
+      - name: ⚙️ Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: 🏗 Build Jekyll site
+        uses: actions/jekyll-build-pages@v1
+
+      - name: 📦 Upload site artifact
+        uses: actions/upload-pages-artifact@v3
 
       - name: 📁 Package icons
         run: |
           cd target
           zip -r material.zip material
           zip -r material-light.zip material-light
-
+ 
       - name: 🚀 Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
           files: target/*.zip
           fail_on_unmatched_files: true
+
+      - name: 🚀 Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
