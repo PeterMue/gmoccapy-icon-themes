@@ -109,3 +109,81 @@ python3 -m pip install -r requirements.txt
 
 For details on using python virtual environment see [Installing packages using pip and virtual environments](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)
 
+
+# Development
+
+The structured is as follows:
+
+```
+src
+├── _build_helper.py                # Helper script for composing the final icon^^w
+└── $name                           # Icon theme directory  
+    ├── build.py                    # Build script for the icon theme
+    ├── index.theme                 # Metadata for the icon theme
+    ├── LICENSE                     # License for the icon theme
+    ├── NOTICE                      # Notices for the icon theme
+    └── svg                         # Directory containing the source SVG files for the icons
+        └── $icon.inkscape.svg
+```
+
+The `svg` directory contains the source SVG files for the icons. It is recommended to use Inkscape to create and edit the SVG files.
+Each icon should be named `$icon.inkscape.svg` where `$icon` is just a descriptive name for the icon or icons in this file.
+
+The `build.py` script is used to build the icon theme from the SVG files. It will generate the required PNG files in the appropriate directories and also create symbolic icons if needed.
+The `_build_helper.py` script is a helper script that is used by the `build.py` script to generate the final icons. It contains functions for generating the icons in different sizes and formats.
+It utilizes Inkscape to convert the SVG files to PNG files.
+
+The `index.theme` file contains the metadata for the icon theme (see [Freedesktop: Icon Theme Specification](https://specifications.freedesktop.org/icon-theme-spec/icon-theme-spec-latest.html)). It is required for the icon theme to be recognized by gmoccapy.
+
+The `LICENSE` file contains the license for the icon theme. It is recommended to use the same license as the original icons or a compatible license.
+The `NOTICE` file contains notices for the icon theme. It is recommended to include any notices or acknowledgements for the original icons or any third-party libraries used in the icon theme.
+
+## Inkscape SVG Files
+
+The SVG files in the `svg` directory should be created using Inkscape. It is recommended to use the following settings when creating the SVG files:
+
+* Canvas size: 128x128 pixels
+* Viewbox: 0 0 128 128
+* Each icon should be centered in the canvas
+* Each icon must be in a unique layer named after the icon (e.g. "slow", "fast")
+
+The layer id can be set via the Inkscape XML Dialog:
+
+![Inkscape XML Dialog](docs/images/inkscape_xml_dialog.png "Inkscape XML Dialog")
+
+(**Note**: It's not sufficient to just name the layer, the layer id must be set to the name of the icon, otherwise the build script will not find the layer and the icon will not be generated correctly.)
+
+## Build Script
+
+Each icon is exported different sizes. Each icon is configured in the `build.py` script as follows:
+
+```python
+    jog_speed_svg = svg("jog_speed_icons.inkscape.svg")
+    composer.add(f"jog_continuous.symbolic.png",
+                src_file=jog_speed_svg,
+                context="actions",
+                layers=["jog-continuous"]
+                )
+```
+
+This allows some dynmic configuration of the icons, for example the `layers` parameter allows to specify which layer of the SVG file should be used for the icon:
+
+```python
+    jog_speed_svg = svg("jog_speed_icons.inkscape.svg")
+    for speed in ["slow", "fast"]:
+        composer.add(f"jog_speed_{speed}.symbolic.png",
+                     src_file=jog_speed_svg,
+                     context="actions",
+                     layers=[speed]
+                     )
+``` 
+
+This will create two icons `jog_speed_slow.symbolic.png` and `jog_speed_fast.symbolic.png` using the layers "slow" and "fast" of the SVG file `jog_speed_icons.inkscape.svg`.
+
+
+# Contributing
+
+Contributions are welcome! 
+
+If you have any ideas for new icons or improvements to the existing icons, feel free to raise an issue or open a pull request.
+
