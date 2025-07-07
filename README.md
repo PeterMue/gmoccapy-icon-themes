@@ -116,7 +116,7 @@ The structured is as follows:
 
 ```
 src
-├── _build_helper.py                # Helper script for composing the final icon^^w
+├── _build_helper.py                # Helper script for composing the final icon
 └── $name                           # Icon theme directory  
     ├── build.py                    # Build script for the icon theme
     ├── index.theme                 # Metadata for the icon theme
