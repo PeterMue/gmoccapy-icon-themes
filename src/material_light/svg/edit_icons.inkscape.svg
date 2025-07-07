@@ -51,17 +51,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.8353772"
-     inkscape:cx="64.434566"
-     inkscape:cy="59.036457"
+     inkscape:cx="64.520251"
+     inkscape:cy="58.693721"
      inkscape:document-units="px"
-     inkscape:current-layer="text1"
+     inkscape:current-layer="delete"
      inkscape:document-rotation="0"
      showgrid="false"
      units="px"
      showguides="true"
      inkscape:window-width="2384"
      inkscape:window-height="1302"
-     inkscape:window-x="2430"
+     inkscape:window-x="2429"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
      inkscape:showpageshadow="2"
@@ -190,5 +190,25 @@
        style="fill:#212121;fill-opacity:1;stroke:none;stroke-width:14541.9px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 113.6,2 H 14.4 C 7.58,2 2.062,7.58 2.062,14.4 L 2,76.4 c 0,6.82 5.58,12.4 12.4,12.4 h 99.2 c 6.82,0 12.4,-5.58 12.4,-12.4 v -62 C 126,7.58 120.42,2 113.6,2 Z M 57.8,20.6 H 70.2 V 33 H 57.8 Z m 0,18.6 H 70.2 V 51.6 H 57.8 Z M 39.2,20.6 H 51.6 V 33 H 39.2 Z m 0,18.6 H 51.6 V 51.6 H 39.2 Z M 33,51.6 H 20.6 V 39.2 H 33 Z M 33,33 H 20.6 V 20.6 H 33 Z M 88.8,76.4 H 39.2 V 64 h 49.6 z m 0,-24.8 H 76.4 V 39.2 H 88.8 Z M 88.8,33 H 76.4 V 20.6 h 12.4 z m 18.6,18.6 H 95 V 39.2 h 12.4 z m 0,-18.6 H 95 V 20.6 h 12.4 z M 64,126 88.8,101.2 H 39.2 Z"
        id="path24" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="add"
+     inkscape:label="add"
+     style="display:inline">
+    <path
+       d="M 126,72.857143 H 72.85714 V 126 H 55.14286 V 72.857143 H 2 V 55.142857 H 55.14286 V 2 H 72.85714 V 55.142857 H 126 Z"
+       id="path2-2"
+       style="stroke-width:8.85714" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="delete"
+     inkscape:label="delete"
+     style="display:inline">
+    <path
+       d="m 22.666668,112.22222 c 0,7.57777 6.199999,13.77778 13.777778,13.77778 h 55.111108 c 7.57778,0 13.777786,-6.20001 13.777786,-13.77778 V 29.555553 H 22.666668 Z M 36.444446,43.33333 h 55.111108 v 68.88889 H 36.444446 Z M 88.111111,8.8888863 81.222224,1.9999975 H 46.777776 L 39.88889,8.8888863 H 15.777779 V 22.666664 H 112.22222 V 8.8888863 Z"
+       id="path2-0"
+       style="stroke-width:6.88889" />
   </g>
 </svg>
