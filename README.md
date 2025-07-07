@@ -73,7 +73,7 @@ Basically that's everything needed to create a custom IconTheme.
 Symbolic icons are a special type of icon, usually a monochrome image. The special feature of symbolic icons is that the icons are automatically colored at runtime to match the desktop theme.
 That way, icon themes can be created that work well with dark and also light desktop themes (in fact, that's not always the best option, that's why a dedicated "material-light" theme exists).
 
-![Symbolic Icon example](docs/images/gmoccapy_icon_theme_symbolic.png "Symbolic Icon example")
+![Symbolic Icon example](docs/assets/images/gmoccapy_icon_theme_symbolic.png "Symbolic Icon example")
 
 To make use of the symbolic feature, a icon file has to have the suffix .symbolic.$ext (where $ext is the regular file extension like png) for example "power_on.symbolic.png".
 
@@ -149,7 +149,7 @@ The SVG files in the `svg` directory should be created using Inkscape. It is rec
 
 The layer id can be set via the Inkscape XML Dialog:
 
-![Inkscape XML Dialog](docs/images/inkscape_xml_dialog.png "Inkscape XML Dialog")
+![Inkscape XML Dialog](docs/assets/images/inkscape_xml_dialog.png "Inkscape XML Dialog")
 
 (**Note**: It's not sufficient to just name the layer, the layer id must be set to the name of the icon, otherwise the build script will not find the layer and the icon will not be generated correctly.)
 

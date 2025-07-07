@@ -4,3 +4,5 @@ plugins:
   - jekyll-remote-theme 
 exclude:
   - build.sh
+  - Gemfile
+  - Gemfile.lock
