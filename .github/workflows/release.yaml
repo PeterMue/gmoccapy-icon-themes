@@ -29,8 +29,11 @@ jobs:
       - name: 🎨 Build docs
         run: |
           mkdir -p docs/assets/themes
-          cp target/material docs/assets/themes/material
-          cp target/material-light docs/assets/themes/material-light
+          for dir in target/*/; do 
+            if [ -f "${dir}index.theme" ]; then
+              cp -r "$dir" docs/assets/themes;
+            fi
+          done
           cd docs
           chmod +x build.sh
           ./build.sh
@@ -47,8 +50,11 @@ jobs:
       - name: 📁 Package icons
         run: |
           cd target
-          zip -r material.zip material
-          zip -r material-light.zip material-light
+          for dir in */; do 
+            if [ -f "${dir}index.theme" ]; then
+              zip -r "${dir%/}.zip" "$dir"
+            fi
+          done
  
       - name: 🚀 Create GitHub Release
         uses: softprops/action-gh-release@v1
