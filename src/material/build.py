@@ -254,7 +254,7 @@ def compose_images():
 
     # edit icons
     edit_icons_svg = svg("edit_icons.inkscape.svg")
-    for name in ["save", "save_as", "new_document", "keyboard", "keyboard_hide", "edit_undo", "edit_redo", "split_view", "comment"]:
+    for name in ["save", "save_as", "new_document", "keyboard", "keyboard_hide", "edit_undo", "edit_redo", "split_view", "comment", "add", "delete"]:
         composer.add(f"{name}.symbolic.png",
                      src_file=edit_icons_svg,
                      context="actions",
